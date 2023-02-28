@@ -1,8 +1,10 @@
+'use client'
+
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { usePathname } from 'next/navigation'
 
 export default function Header({ title }: { title: string }) {
-  const { pathname } = useRouter()
+  const pathname = usePathname()
   return (
     <header className='items-center'>
       <h1 className='text-center text-3xl font-extrabold leading-9 tracking-tight'>

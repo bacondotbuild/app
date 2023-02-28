@@ -6,14 +6,14 @@ import Title from '@/components/design/title'
 import Page from '@/components/page'
 import { api } from '@/lib/api'
 
-const Home: NextPage = () => {
+const Pages: NextPage = () => {
   const hello = api.example.hello.useQuery({ text: 'from tRPC' })
 
   return (
     <Page>
       <Main className='flex flex-col p-4'>
         <div className='flex flex-grow flex-col items-center justify-center space-y-4'>
-          <Title>home</Title>
+          <Title>/pages</Title>
           <Button href='https://github.com/b4conjuice/baconponents'>
             external link
           </Button>
@@ -25,4 +25,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Pages
