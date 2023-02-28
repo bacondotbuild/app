@@ -20,6 +20,9 @@ const config = {
   //   locales: ["en"],
   //   defaultLocale: "en",
   // },
-  experimental: { appDir: true },
+  experimental: {
+    appDir: true,
+    typedRoutes: true,
+  },
 }
 export default config;
