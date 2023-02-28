@@ -1,8 +1,9 @@
+import Link from 'next/link'
+
 import Main from '@/components/design/main'
 import Title from '@/components/design/title'
 import Button from '@/components/design/button'
 import ClientButton from './client-button'
-import Link from 'next/link'
 
 export default function Home() {
   return (
